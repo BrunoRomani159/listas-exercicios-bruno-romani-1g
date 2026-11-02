@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estudo dirigido: Flexbox (parte 2)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="topo-site">
+      <h1>Estudo dirigido: Flexbox (parte 2)</h1>
+      <p>Demonstrações das questões 13 a 29.</p>
+    </header>
+
+    <div class="conteudo">
+      <section class="demo">
+        <h2>Questões 14 e 16: flex: 1 e flex: auto</h2>
+        <p>Faixa de 600px com dois itens de width 100px e 300px.</p>
+        <h3>flex: 1</h3>
+        <div class="rolagem">
+          <div class="faixa" data-relatar>
+            <div class="item item-curto flex-um">&hellip;</div>
+            <div class="item item-longo flex-um">&hellip;</div>
+          </div>
+        </div>
+        <h3>flex: auto</h3>
+        <div class="rolagem">
+          <div class="faixa" data-relatar>
+            <div class="item item-curto flex-auto">&hellip;</div>
+            <div class="item item-longo flex-auto">&hellip;</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo">
+        <h2>Questões 18 e 19: o mínimo que trava o encolhimento</h2>
+        <button type="button" data-classe="ajustado" aria-pressed="false">
+          Alternar min-width: 0
+        </button>
+        <div class="rolagem">
+          <div class="miolo-exemplo">
+            <aside>Menu</aside>
+            <div class="texto" data-alvo>
+              Pneumoultramicroscopicossilicovulcanoconiótico
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo">
+        <h2>Questões 20 e 21: order</h2>
+        <p>Use a tecla Tab: o foco segue a ordem do HTML, não a da tela.</p>
+        <div class="barra">
+          <button type="button">A</button>
+          <button type="button">B</button>
+          <button type="button" class="primeiro">C</button>
+        </div>
+      </section>
+
+      <section class="demo">
+        <h2>Questões 22 e 23: align-self</h2>
+        <div class="alinhamento">
+          <div class="item">stretch (padrão do pai)</div>
+          <div class="item no-fim">align-self: flex-end</div>
+          <div class="item automatico">align-self: auto</div>
+        </div>
+      </section>
+
+      <section class="demo">
+        <h2>Questões 24 a 26: a página com miolo</h2>
+        <div class="pagina">
+          <header>topo</header>
+          <div class="miolo">
+            <aside>menu</aside>
+            <main>texto</main>
+          </div>
+          <footer>rodape</footer>
+        </div>
+      </section>
+
+      <section class="demo">
+        <h2>Questão 27: flex-grow no lugar errado</h2>
+        <h3>flex-grow: 1 no contêiner (sem efeito)</h3>
+        <div class="linha linha-errada">
+          <div class="item">1</div>
+          <div class="item">2</div>
+        </div>
+        <h3>flex-grow: 1 nos itens</h3>
+        <div class="linha linha-certa">
+          <div class="item">1</div>
+          <div class="item">2</div>
+        </div>
+      </section>
+
+      <section class="demo">
+        <h2>Questão 28: flex-wrap</h2>
+        <button type="button" data-classe="quebra" aria-pressed="false">
+          Alternar flex-wrap: wrap
+        </button>
+        <div class="rolagem">
+          <div class="cartoes" data-alvo>
+            <div class="cartao">Cartão 1</div>
+            <div class="cartao">Cartão 2</div>
+            <div class="cartao">Cartão 3</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
